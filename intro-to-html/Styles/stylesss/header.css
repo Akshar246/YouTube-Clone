@@ -1,0 +1,185 @@
+
+.header {
+  height:  55px ;
+  display: flex;
+  flex-direction: row;
+  color: palevioletred;
+  justify-content: space-between;  /* It takes the entire 
+  space and add space  */ 
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  
+  background-color: white;
+
+  /*border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color: rgb(209, 209, 209); */
+
+  border: 1px solid rgb(209, 209, 209) ;
+  /* This is a short-cut as i written up*/
+}
+.left-section {
+
+  display: flex;
+  align-items: center;
+}
+.left {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.youtube-logo {
+  height: 20px;
+ 
+}
+
+.middle-section {
+
+  flex: 1; 
+  margin-left: 70px;
+  margin-right: 30px;
+  max-width:  500px ;
+  display: flex;
+  align-items: center;
+
+ }
+ .Search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(179, 179, 179);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;  /* width-0 means it will shrik as we want to shrink
+   the search bar*/ 
+ }
+.Search-bar::placeholder {
+  font-family: Roboto , Arial;
+  font-size: 16px; 
+
+}
+ .search-button {
+  width: 66px;
+  height: 39px;
+  background-color: rgb(239, 237, 237);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(179, 179, 179);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+.search-button ,
+.voice-search-button ,
+.upload-icon-container .tooltip ,
+.Youtube-container .tooltip ,
+.notifications-icon-container .tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-button .tooltip ,
+.voice-search-button .tooltip ,
+.upload-icon-container .tooltip ,
+.Youtube-container .tooltip ,
+.notifications-icon-container .tooltip {
+  /* This is an advanced Css Selector*/
+  position: absolute;
+  background-color: rgb(94, 94, 94);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+ 
+
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip ,
+.Youtube-container:hover .tooltip ,
+.notifications-icon-container:hover .tooltip {
+opacity: 1;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space: nowrap;
+}
+
+.search-icon{
+  height: 20px;
+}
+
+.voice-search-button {
+  width: 40px; 
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+
+.voice-search-icon {
+  height: 24px;
+  
+}
+
+
+.right-section {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;   /* This function means it will not shrink 
+  , it will remain space between logos as you can see in the 
+  clonr in the right section*/ 
+} 
+
+.upload-icon {
+height: 24px;
+
+}
+
+.youtube-icon {
+  height: 24px;
+}
+
+.notification-icon {
+  height: 24px;
+}
+.notifications-icon-container {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(218, 1, 1);
+  color: white;
+  border-radius: 24px;
+  font-size: 11px;
+  font-family: Roboto , Arial;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
+
+.currunt-icon {
+  height: 34px;
+  border-radius: 16px;
+
+}
